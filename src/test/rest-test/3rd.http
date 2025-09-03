@@ -1,0 +1,16 @@
+@host=localhost:8080/3rd-server
+
+### 测试GET
+GET {{host}}/user
+Content-Type: application/json; charset=UTF-8
+Token: 3rd-get-token
+
+### 测试POST
+POST {{host}}/user
+Content-Type: application/json; charset=UTF-8
+Token: 3rd-post-token
+
+{
+  "name": "张三",
+  "age": 40
+}

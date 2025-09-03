@@ -1,0 +1,16 @@
+@host=localhost:8080/proxy-api
+
+### 测试GET
+GET {{host}}/user
+Content-Type: application/json; charset=UTF-8
+Token: proxy-get-token
+
+### 测试POST
+POST {{host}}/user
+Content-Type: application/json; charset=UTF-8
+Token: proxy-post-token
+
+{
+  "name": "张三",
+  "age": 40
+}
