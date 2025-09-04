@@ -1,0 +1,5 @@
+@host=localhost:8080/admin-api
+
+### 测试GET
+GET {{host}}/test
+Content-Type: application/json; charset=UTF-8
